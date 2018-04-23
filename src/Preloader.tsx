@@ -1,4 +1,5 @@
-import PreloaderIcon, { ICON_TYPE } from 'react-preloader-icon'
+import PreloaderIcon from 'react-preloader-icon'
+import Oval from 'react-preloader-icon/loaders/Oval';
 import * as React from 'react'
 export const Preloader = ({ text, ...props })=> (
   <div
@@ -6,7 +7,7 @@ export const Preloader = ({ text, ...props })=> (
     style={{ display: 'flex', flexFlow: 'column nowrap', alignItems: 'center' }}
   >
     <PreloaderIcon
-      type={ICON_TYPE.OVAL}
+      type={Oval}
       size={32}
       strokeWidth={8} // min: 1, max: 50
       strokeColor='#46546e'
